@@ -16,5 +16,5 @@ public interface InstructorService {
 
     void deleteInstructor(Long id);
 
-    void assignInstructor(Long courseId, Long instructorId);
+    void assignInstructor(Long courseId, Long instructorId) throws IOException;
 }

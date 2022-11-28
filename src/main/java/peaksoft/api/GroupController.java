@@ -61,7 +61,7 @@ public class GroupController {
         Group group = groupService.getGroupById(id);
         model.addAttribute("group", group);
         model.addAttribute("companyId", group.getCompany().getId());
-        return "groups";
+        return "/group/update_group";
     }
 
     @PostMapping("/{companyId}/{id}/saveUpdateGroup")

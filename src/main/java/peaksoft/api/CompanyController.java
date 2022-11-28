@@ -37,7 +37,7 @@ public class CompanyController {
     }
 
     @PostMapping("/saveCompany")
-    public String saveCompany(@ModelAttribute("company") Company company) throws IOException {
+    public String saveCompany(@ModelAttribute("company") Company company) {
         service.addCompany(company);
         return "redirect:/getAllCompanies";
     }
@@ -50,7 +50,7 @@ public class CompanyController {
     }
 
     @PostMapping("/saveUpdateCompany")
-    public String saveUpdateCompany(@ModelAttribute("company") Company company) throws IOException {
+    public String saveUpdateCompany(@ModelAttribute("company") Company company)  {
         service.updateCompany(company);
         return "redirect:/getAllCompanies";
     }

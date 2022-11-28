@@ -24,21 +24,19 @@ public class Course {
     @SequenceGenerator(name = "course_seq", sequenceName = "course_seq", allocationSize = 1)
     private Long id;
 
-    @NotNull(message = "Course name cant be null")
+
     @Column(length = 100000, name = "course_name")
     private String courseName;
 
-    @Min(value = 1, message = "продолжительность курса должна быть более 1 месяца")
     private int duration;
 
-    @NotNull(message = "Описание курса не может быть нулевым")
     @Column(length = 100000, name = "description")
     private String description;
 
     @ManyToOne(cascade = {REFRESH, MERGE, DETACH}, fetch = FetchType.EAGER)
     private Company company;
 
-    @ManyToMany(cascade = {MERGE, REFRESH, DETACH}, fetch = LAZY)
+    @ManyToMany(cascade = {MERGE, REFRESH, DETACH,PERSIST}, fetch = LAZY)
     @JoinTable(
             name = "groups_courses",
             joinColumns = @JoinColumn(name = "course_id"),
@@ -68,7 +66,6 @@ public class Course {
             instructors=new ArrayList<>();
         }
         instructors.add(instructor);
-        instructor.dobStudent(this);
     }
 
     @OneToMany(cascade = {MERGE, REFRESH, DETACH, REMOVE, PERSIST}, fetch = LAZY, mappedBy = "course")

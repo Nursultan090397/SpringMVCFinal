@@ -45,7 +45,7 @@ public class InstructorServiceImpl implements InstructorService {
     }
 
     @Override
-    public void assignInstructor(Long courseId, Long instructorId) {
+    public void assignInstructor(Long courseId, Long instructorId) throws IOException {
         instructorRepository.assignInstructor(courseId,instructorId);
     }
 }
