@@ -9,23 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4512d213-15a6-4a57-9ca9-71ad7878db26" name="Changes" comment="6">
+    <list default="true" id="4512d213-15a6-4a57-9ca9-71ad7878db26" name="Changes" comment="7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/api/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/api/CompanyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/api/GroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/api/GroupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/model/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/model/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/api/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/api/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/model/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/model/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/model/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/model/Instructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repository/InstructorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repository/InstructorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repository/repositoryImpl/InstructorRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repository/repositoryImpl/InstructorRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/service/InstructorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/service/InstructorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/service/serviceImpl/InstructorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/service/serviceImpl/InstructorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/group/addGroup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/group/addGroup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/group/addGroupByCourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/group/addGroupByCourse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/group/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/group/groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/group/updateGroup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/group/updateGroup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/group/update_group.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/group/update_group.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repository/repositoryImpl/GroupRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repository/repositoryImpl/GroupRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/student/addStudent.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/student/addStudent.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,7 +166,8 @@
       <workItem from="1669023139483" duration="91215000" />
       <workItem from="1669392401546" duration="188000" />
       <workItem from="1669392602152" duration="50000" />
-      <workItem from="1669392674103" duration="7662000" />
+      <workItem from="1669392674103" duration="7896000" />
+      <workItem from="1669617877699" duration="4032000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1669103821112</created>
@@ -222,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669371070663</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="7">
+      <created>1669617689865</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669617689865</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +242,7 @@
     <MESSAGE value="4" />
     <MESSAGE value="5" />
     <MESSAGE value="6" />
-    <option name="LAST_COMMIT_MESSAGE" value="6" />
+    <MESSAGE value="7" />
+    <option name="LAST_COMMIT_MESSAGE" value="7" />
   </component>
 </project>

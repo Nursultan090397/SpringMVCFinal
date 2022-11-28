@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import peaksoft.model.Student;
+import peaksoft.model.StudyFormat;
 import peaksoft.service.GroupService;
 import peaksoft.service.StudentService;
 
@@ -33,6 +34,8 @@ public class StudentController {
     @GetMapping("/{id}/addStudent")
     public String addCourse(@PathVariable Long id, Model model) {
         model.addAttribute("student", new Student());
+        model.addAttribute("studyFormatOnline", StudyFormat.ONLINE);
+        model.addAttribute("studyFormatOffline", StudyFormat.OFFLINE);
         model.addAttribute("groupId", id);
         return "/student/addStudent";
     }

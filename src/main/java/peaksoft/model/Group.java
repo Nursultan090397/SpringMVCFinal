@@ -31,6 +31,16 @@ public class Group {
     @Column(length = 100000, name = "image")
     private String image;
 
+    private int count;
+
+    public void plusCount(){
+        count++;
+    }
+
+    public void minusCount(){
+        count--;
+    }
+
     @ManyToMany(cascade = {MERGE, REFRESH, DETACH,PERSIST}, mappedBy = "groups")
     private List<Course> courses;
 
@@ -40,7 +50,7 @@ public class Group {
             courses=new ArrayList<>();
         }
         courses.add(course);
-        //plusCount
+
     }
 
     @OneToMany(cascade = {MERGE, PERSIST, DETACH, REFRESH, REMOVE}, fetch = FetchType.LAZY, mappedBy = "groups")

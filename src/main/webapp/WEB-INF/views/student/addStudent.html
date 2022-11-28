@@ -29,7 +29,17 @@
     <br><br>
     <input style=" background: none;color: white; width: 90%;outline: none;border:none;border-bottom: 1px solid white;"type="text" name="phoneNumber" th:field="*{phoneNumber}" placeholder="phoneNumber" required>
     <br><br>
-    <input style=" background: none;color: white; width: 90%;outline: none;border:none;border-bottom: 1px solid white;"type="text" name="studyFormat" th:field="*{studyFormat}" placeholder="studyFormat">
+<!--    <input style=" background: none;color: white; width: 90%;outline: none;border:none;border-bottom: 1px solid white;"type="text" name="studyFormat" th:field="*{studyFormat}" placeholder="studyFormat">-->
+
+    <label>
+      <select th:field="*{studyFormat}">
+        <option th:value="${studyFormatOnline}">ONLINE</option>
+        <option th:value="${studyFormatOffline}">OFFLINE</option>
+      </select>
+    </label>
+    <br><br>
+
+
 
     <br><br>
     <button style="margin-top: 30px;border: none;width: 90%;border-radius: 20px; background: #F8DB57;color: black;" type="submit" >Add</button>
